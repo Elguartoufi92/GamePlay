@@ -28,7 +28,7 @@ public class GameView {
     public void showPlayerTurn(Player player, int playerNumber) {
         System.out.println("\n\nTour de " + player.getUsername() +
                 " (Joueur " + playerNumber + ")");
-        System.out.println("Commandes: 'move x1,y1 x2,y2', 'help', 'surrender', 'save'");
+        System.out.println("Commandes: 'move x1,y1 x2,y2', 'help', 'surrender'");
     }
 
     public String getPlayerInput() {
@@ -48,9 +48,7 @@ public class GameView {
         System.out.println("Commande inconnue ! Tapez 'help' pour l'aide.");
     }
 
-    public void showSaveNotImplemented() {
-        System.out.println("Fonctionnalité de sauvegarde non implémentée dans cette version.");
-    }
+
 
     public void showGameEnd(Player winner, Player loser, int moveCount, boolean surrender) {
         System.out.println("\n" + "=".repeat(50));

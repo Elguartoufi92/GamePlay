@@ -165,12 +165,6 @@ public class GameController {
                 handleSurrender();
                 return;
             }
-
-            if (input.equals("save")) {
-                gameView.showSaveNotImplemented();
-                continue;
-            }
-
             if (input.startsWith("move ")) {
                 if (handleMove(input)) {
                     // Vérifier les conditions de victoire
@@ -230,9 +224,6 @@ public class GameController {
     }
 
     private void handleSurrender() {
-        Player currentPlayer = gameService.getCurrentPlayer();
-        Player winner = gameService.getCurrentPlayerNumber() == 1 ? gameService.getPlayer2() : gameService.getPlayer1();
-
         handleGameEnd(gameService.getCurrentPlayerNumber() == 1 ? 2 : 1, true);
     }
 
