@@ -10,7 +10,6 @@ public class HelpView {
         System.out.println("  move x1,y1 x2,y2  - Déplacer une pièce de (x1,y1) vers (x2,y2)");
         System.out.println("  help              - Afficher cette aide");
         System.out.println("  surrender         - Abandonner la partie");
-        System.out.println("  save              - Sauvegarder (non implémenté)");
         System.out.println("\nSymboles sur le plateau:");
         System.out.println("  . = case normale    ~ = eau       x = piège    # = sanctuaire");
         System.out.println("  Minuscules = Joueur 1    MAJUSCULES = Joueur 2");

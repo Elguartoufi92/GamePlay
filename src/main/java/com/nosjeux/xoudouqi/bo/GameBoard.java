@@ -1,5 +1,5 @@
 package com.nosjeux.xoudouqi.bo;
-// 6. Classe principale du plateau
+// Classe principale du plateau
 public class GameBoard {
     private static final int WIDTH = 7;
     private static final int HEIGHT = 9;
@@ -44,7 +44,7 @@ public class GameBoard {
     }
 
     private void placePieces() {
-        // Placement initial des pièces du joueur 1 (en bas)
+        // Placement initial des pièces du joueur 1 (en haut)
         placePiece(new Piece(Animal.RAT, 1, new Position(6, 2)));
         placePiece(new Piece(Animal.CAT, 1, new Position(1, 1)));
         placePiece(new Piece(Animal.DOG, 1, new Position(5, 1)));
@@ -54,7 +54,7 @@ public class GameBoard {
         placePiece(new Piece(Animal.LION, 1, new Position(6, 0)));
         placePiece(new Piece(Animal.ELEPHANT, 1, new Position(0, 2)));
 
-        // Placement initial des pièces du joueur 2 (en haut)
+        // Placement initial des pièces du joueur 2 (en bas)
         placePiece(new Piece(Animal.RAT, 2, new Position(0, 6)));
         placePiece(new Piece(Animal.CAT, 2, new Position(5, 7)));
         placePiece(new Piece(Animal.DOG, 2, new Position(1, 7)));

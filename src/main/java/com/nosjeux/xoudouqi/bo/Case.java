@@ -1,6 +1,6 @@
 package com.nosjeux.xoudouqi.bo;
 
-// 5. Classe Case
+//  Classe Case
 public class Case {
     private final CaseType type;
     private final Position position;
